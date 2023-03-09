@@ -1,0 +1,18 @@
+CRITICAL - 2023-03-07 17:17:59 --> Too few arguments to function App\Controllers\Shop::product(), 0 passed in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Shop.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Shop->product()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:19:51 --> Too few arguments to function App\Controllers\Shop::product(), 0 passed in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Shop.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Shop->product()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:43:16 --> Object of type App\Controllers\Admin\Shop is not callable
+in APPPATH\Controllers\Home.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
