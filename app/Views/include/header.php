@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= (isset($meta_title)?$meta_title:"no titile") ?></title>
+  <title><?= (isset($meta_title)?$meta_title:"ci4 project") ?></title>
   <!-- bootstrap  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -27,6 +27,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/blog/post">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/display">Display</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
