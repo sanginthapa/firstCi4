@@ -31,6 +31,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/display">Display</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quiz">Start Quiz</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown

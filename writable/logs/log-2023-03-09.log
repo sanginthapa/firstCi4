@@ -145,3 +145,247 @@ in APPPATH\Controllers\Blog.php on line 23.
  2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
  3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-09 14:24:08 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `q...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `q...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `q...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `q...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-141827_QuizQuestionTable.php(36): CodeIgniter\Database\Forge->createTable('quiz_question')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\QuizQuestionTable->up()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:15:54 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `q...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `q...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `q...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `q...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-155441_QuizeAttempts.php(51): CodeIgniter\Database\Forge->createTable('question_attemp...')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\QuizeAttempts->up()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:20 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:29 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:31 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:32 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:33 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:33 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:34 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:36 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:20:52 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `q...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `q...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `q...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `q...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-155441_QuizeAttempts.php(51): CodeIgniter\Database\Forge->createTable('question_attemp...')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\QuizeAttempts->up()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:21:21 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:21:23 --> mysqli_sql_exception: Can't create table `ci4`.`question_attempts` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `q...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `q...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `q...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `q...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-155441_QuizeAttempts.php(51): CodeIgniter\Database\Forge->createTable('question_attemp...')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\QuizeAttempts->up()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:22:25 --> mysqli_sql_exception: Can't create table `ci4`.`question_attempts` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `q...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `q...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `q...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `q...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-155441_QuizeAttempts.php(51): CodeIgniter\Database\Forge->createTable('question_attemp...')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\QuizeAttempts->up()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-09 17:23:42 --> mysqli_sql_exception: Unknown table 'ci4.student_table' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `stu...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `stu...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `stu...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `stu...')
+#4 C:\xampp\htdocs\ci_projects\project-root\app\Database\Migrations\2023-03-09-153010_Students.php(46): CodeIgniter\Database\Forge->dropTable('student_table')
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(877): App\Database\Migrations\Students->down()
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\ci_projects\project-root\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-03-09 19:09:36 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+in APPPATH\Controllers\Quiz.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Quiz->startQuiz()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-09 19:10:34 --> mysqli_sql_exception: Duplicate entry 'sangin20mi@gmail.com' for key 'email' in C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ci_projects\project-root\app\Controllers\Quiz.php(21): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Quiz->startQuiz()
+#10 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+#11 C:\xampp\htdocs\ci_projects\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ci_projects\project-root\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-09 19:10:34 --> Duplicate entry 'sangin20mi@gmail.com' for key 'email'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `students_table` (`student_name`, `email`, `created_at`, `updated_at`) VALUES (:student_name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Quiz.php(21): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Quiz->startQuiz()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
